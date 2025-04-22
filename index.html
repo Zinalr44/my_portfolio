@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zinal Raval Portfolio</title>
-    <link rel="stylesheet" href=style.css>
+    <meta name="description" content="Zinal Raval – AI, Robotics, and Machine Learning Portfolio. Explore projects in LLMs, NLP, RAG, and automation.">
+    <meta property="og:title" content="Zinal Raval | AI & Robotics Engineer">
+    <meta property="og:image" content="thumbnail.png">
+    <meta property="og:description" content="Projects, experience, and innovations in AI, ML, LLMs, and robotics.">    
+    <link rel="stylesheet" href="C:\Users\Dell.com\Desktop\portfolio\style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src=script.js></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script defer src="C:\Users\Dell.com\Desktop\portfolio\script.js"></script>
 </head>
 <body>
+  <div id="loader" class="loader-container">
+    <div class="loader"></div>
+</div>
     <header>
+      <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
         <div class="logo">Zinal Raval</div>
         <nav>
             <ul>
@@ -19,12 +32,14 @@
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li>
-                <div class="toggle-switch">
-                    <input type="checkbox" id="mode-toggle">
-                    <label for="mode-toggle" class="label-mode"></label>
-                </div>
-            </li>
+                <li class="toggle-wrapper">
+                  <input type="checkbox" id="mode-toggle" />
+                  <label for="mode-toggle" class="label-mode" title="Toggle light/dark mode">
+                    <span class="toggle-icon sun">☀️</span>
+                    <span class="toggle-icon moon">🌙</span>
+                    <span class="slider"></span>
+                  </label>
+                </li>                                            
             </ul>
         </nav>
     </header>
@@ -32,38 +47,54 @@
     <section class="hero" id="about">
         <div class="content">
             <h2>Hi, I'm <span class="highlight">Zinal Raval</span></h2>
-            <p>Data Science Enthusiast captivated by <span class="highlight"> Artificial Intelligence</span>, <span class="highlight"> Machine Learning</span>, and <span class="highlight">Robotics</span></p>
+            <p>What started with curiosity became a journey into intelligent machines and real-world AI. I build things that can understand, predict, and act — from language models to sensor-driven robots. My goal? Make smart tech useful.</p>
+            <p><em>“Code that learns. Bots that help. Projects that matter.”</em></p>
             <a href="#projects" class="button">See My Work</a>
 
-            <a href="Zinal Raval.pdf" class="button">Resume</a>
+            <a href="C:\Users\Dell.com\Desktop\placement\Zinal_Raval_AI_DS_Resume.pdf" class="button" download>Download Resume</a>
         </div>
-        <img src=bitmoji.png alt="Zinal Raval" class="hero-image">
+        <img src="D:\WhatsApp Image 2025-04-10 at 14.59.37_ba8a2b79.jpg" alt="Zinal Raval" class="hero-image" loading="lazy">
     </section>
 
     <section class="section skills" id="skills">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-cloud">
+                <!-- AI/ML & LLMs -->
+                <span>TensorFlow</span>
+                <span>Scikit-learn</span>
+                <span>LangChain</span>
+                <span>Hugging Face</span>
+                <span>RAG</span>
+                <span>OpenRouter</span>
+                <span>SentenceTransformers</span>
+                <span>FAISS</span>
+                <span>ChromaDB</span>
+              
+                <!-- Programming -->
                 <span>Python</span>
                 <span>SQL</span>
                 <span>C/C++</span>
-                <span>Arduino IDE</span>
+              
+                <!-- Web & Backend -->
+                <span>FastAPI</span>
                 <span>HTML</span>
                 <span>CSS</span>
-                <span>MongoDB</span>
                 <span>Git/GitHub</span>
-                <span>OpenCV</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Scikit-learn</span>
-                <span>TensorFlow</span>
-                <span>Keras</span>
-                <span>Matplotlib</span>
-                <span>Data Analysis</span>
+                <span>Selenium</span>
+              
+                <!-- Robotics / Embedded -->
+                <span>Arduino IDE</span>
+              
+                <!-- Document AI / OCR -->
+                <span>PyMuPDF</span>
+                <span>pdfplumber</span>
+                <span>Tesseract OCR</span>
+              
+                <!-- Concepts -->
                 <span>Machine Learning</span>
                 <span>Deep Learning</span>
-                <span>Data Visualization</span>    
-            </div>
+              </div>              
         </div>
     </section>
 
@@ -71,95 +102,201 @@
         <div class="container">
             <h2>Projects</h2>
             <p class="section-description">
-                Explore my diverse projects that showcase my expertise in AI, Machine Learning, and Robotics. Each project highlights my skills in developing innovative solutions to real-world problems.
-            </p>
-            <div class="project-gallery">
-                <div class="project-item">
+                A curated collection of AI, LLM, NLP, and Robotics projects — blending code with creativity to solve real-world problems through automation, intelligence, and smart systems.
+            </p>              
+            <div class="project-gallery">      <!-- AR-DMS -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/AI-Research-DMS" target="_blank" rel="noopener noreferrer">
+                  <div class="project-details">
+                    <h3>AI Research & Decision System (AR-DMS)</h3>
+                    <p>Full-stack AI assistant capable of parsing PDFs, web pages, and images using OCR, NLP, and semantic search. Supports RAG-based querying, summarization, and intelligent decision support.</p>
+                    <p><strong>Tech:</strong> FastAPI, LangChain, Hugging Face, FAISS, PyMuPDF, Tesseract</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Material Estimator -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/AI-Powered-Material-Estimation-from-Architectural-PDFs" target="_blank">
+                  <div class="project-details">
+                    <h3>Material Estimation from Architectural PDFs</h3>
+                    <p>Production-grade AI pipeline to analyze architectural blueprints and extract structured, room-wise material takeoff. Outputs CSV reports with counts and area-based estimations using LLM reasoning.</p>
+                    <p><strong>Tech:</strong> Groq, LLaMA 3, PyMuPDF, pdfplumber, OCR</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- HistoriAI -->
+              <div class="project-item">
+                <a href="https://github.com/ShivenPatel19/HistoriAI---AI-Chatbot-Guide-for-India-s-Heritage" target="_blank">
+                  <div class="project-details">
+                    <h3>HistoriAI – Multilingual Travel Assistant</h3>
+                    <p>Voice-interactive travel bot offering historical insights in English, Hindi, and Gujarati. Powered by LLaMA 3 and LangGraph with a local RAG system and text-to-speech output.</p>
+                    <p><strong>Tech:</strong> LLaMA 3, LangGraph, ChromaDB, MMS, TTS</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- LinkedIn Scraper -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Automated-LinkedIn-Profile-Scraper-Business-Insights" target="_blank">
+                  <div class="project-details">
+                    <h3>Automated LinkedIn Profile Scraper & Business Insights</h3>
+                    <p>Web scraping system that extracts professional data by filters and classifies businesses using AI. Includes scheduling, proxies, and JSON exports for large-scale insights.</p>
+                    <p><strong>Tech:</strong> Selenium, SerpAPI, Python, JSON, Web Automation</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- GPT4 Rewriter -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/AI-Powered-Text-Rewriting-System-Using-GPT-4" target="_blank">
+                  <div class="project-details">
+                    <h3>AI-Powered Text Rewriting System (GPT-4 + SBERT)</h3>
+                    <p>Advanced few-shot GPT-4-based rewriting tool with SBERT for style and meaning validation. Designed for content rephrasing with tone-preserving logic and prompt engineering.</p>
+                    <p><strong>Tech:</strong> GPT-4 (OpenRouter), SentenceTransformers, Few-shot Learning, SBERT</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Robotic Nurse -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Robotic-Nurse" target="_blank">
+                  <div class="project-details">
+                    <h3>Robotic Nurse (SSIP Funded – Ongoing)</h3>
+                    <p>Smart nursing assistant robot for healthcare automation. Capable of delivering medicine and monitoring vitals using embedded electronics and BLE communication.</p>
+                    <p><strong>Tech:</strong> Arduino, IR Sensors, BLE, Embedded C</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Robotic Arm -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Robotic-Arm" target="_blank">
+                  <div class="project-details">
+                    <h3>Robotic Arm (SSIP Funded)</h3>
+                    <p>Programmable robotic arm designed for precision pick-and-place using Arduino and servo motors. Supports real-time control with industrial use case scenarios.</p>
+                    <p><strong>Tech:</strong> Arduino, Servo Motors, Sensors, Embedded Programming</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Video Downloader -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Python-Based-Video-Downloader-API" target="_blank">
+                  <div class="project-details">
+                    <h3>Python-Based Video Downloader API</h3>
+                    <p>Built a FastAPI wrapper around a video downloading tool that extracts videos from various sources by URL. Supports multi-resolution, concurrent downloads, and metadata handling.</p>
+                    <p><strong>Tech:</strong> Python, FastAPI, yt-dlp, Pydantic</p>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Real-time Face Swapping -->
+              <div class="project-item">
+                <a href="https://github.com/Zinalr44/Real-time-Face-Swapping-using-Dlib-DeepFaceLive" target="_blank">
+                  <div class="project-details">
+                    <h3>Real-time Face Swapping using Dlib & DeepFaceLive</h3>
+                    <p>Live face-swapping engine using facial landmarks, deep feature embeddings, and video stream alignment. Combines Dlib and DeepFaceLive for high-precision identity replacement.</p>
+                    <p><strong>Tech:</strong> Dlib, OpenCV, DeepFaceLive, NumPy</p>
+                  </div>
+                </a>
+              </div>
+        
+                  <div class="project-item">
                     <a href="https://github.com/Zinalr44/Food-Classification-and-Calorie-Estimation-using-ResNet50" target="_blank">
-                        <div class="project-details">
-                            <h3>Intelligent Food Image Recognition and Calorie Estimation</h3>
-                            <p>Developed a state-of-the-art deep learning model using ResNet50 to accurately classify various food items and estimate their caloric content. This project enhances dietary tracking and nutritional monitoring with high precision, providing users with a reliable tool to manage their dietary intake effectively.</p>
-                        </div>
+                      <div class="project-details">
+                        <h3>Food Classification & Calorie Estimation</h3>
+                        <p>Built a ResNet50-based model to classify food images and estimate caloric values, aiding dietary monitoring through visual AI recognition.</p>
+                        <p><strong>Tech:</strong> ResNet50, Keras, TensorFlow, ImageNet, NumPy</p>
+                      </div>
                     </a>
-                </div>
-                <div class="project-item">
+                  </div>
+                
+                  <div class="project-item">
                     <a href="https://github.com/Zinalr44/Healthcare-Billing-Data-Analysis-and-Reporting" target="_blank">
-                        <div class="project-details">
-                            <h3>Healthcare Billing Data Audit and Analysis</h3>
-                            <p>Created an automated workflow in Python for auditing and analyzing complex pharmacy billing data. The system ensures data accuracy, identifies discrepancies, and streamlines the report generation process. By leveraging advanced AI techniques, this project optimizes billing processes and enhances operational efficiency in the healthcare sector.</p>
-                        </div>
+                      <div class="project-details">
+                        <h3>Healthcare Billing Data Audit</h3>
+                        <p>Automated complex healthcare billing audits using Python. Enabled anomaly detection, analytics, and report generation for billing optimization.</p>
+                        <p><strong>Tech:</strong> Pandas, NumPy, Matplotlib, Regex, Python Automation</p>
+                      </div>
                     </a>
-                </div>
-                <div class="project-item">
+                  </div>
+                
+                  <div class="project-item">
                     <a href="https://github.com/Zinalr44/Cat-and-Dog-Image-Classification-using-CNN" target="_blank">
-                        <div class="project-details">
-                            <h3>Cat vs Dog Image Classifier</h3>
-                            <p>Designed and implemented a convolutional neural network (CNN) using TensorFlow and Keras to classify images of cats and dogs with 95% accuracy. This project demonstrates expertise in image classification and deep learning, providing a reliable model for distinguishing between two common pet categories.</p>
-                        </div>
+                      <div class="project-details">
+                        <h3>Cat vs Dog Image Classifier</h3>
+                        <p>Developed a CNN model to distinguish between cat and dog images with high accuracy. Focused on training, validation, and overfitting prevention.</p>
+                        <p><strong>Tech:</strong> TensorFlow, Keras, CNN, Image Augmentation</p>
+                      </div>
                     </a>
-                </div>
-                <div class="project-item">
+                  </div>
+                
+                  <div class="project-item">
                     <a href="https://github.com/Zinalr44/Movie-Recommendation-System-using-TF-IDF-and-SVD" target="_blank">
-                        <div class="project-details">
-                            <h3>Movie Recommendation System</h3>
-                            <p>Developed a sophisticated recommendation engine that combines collaborative filtering and content-based algorithms to suggest movies to users based on their preferences and viewing history. This project significantly increases user engagement by delivering personalized movie recommendations.</p>
-                        </div>
+                      <div class="project-details">
+                        <h3>Movie Recommendation System</h3>
+                        <p>Designed a hybrid recommendation engine combining TF-IDF and SVD-based collaborative filtering for personalized content suggestions.</p>
+                        <p><strong>Tech:</strong> Scikit-learn, Pandas, TF-IDF, SVD, Cosine Similarity</p>
+                      </div>
                     </a>
-                </div>
-                <div class="project-item">
-                    <a href="20240104_120909.jpg" target="_blank">
-                        <div class="project-details">
-                            <h3>Robotic Nurse (on-going)</h3>
-                            <p>Innovated a prototype for a robotic nurse capable of medication delivery and vital sign monitoring. Funded by SSIP India, this project aims to improve patient safety and operational efficiency in healthcare settings. The robotic nurse is designed to assist healthcare professionals by automating routine tasks and ensuring accurate medication administration.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-item">
-                    <a href="WhatsApp Video 2024-08-07 at 22.53.12_325403f8.mp4" target="_blank">
-                        <div class="project-details">
-                            <h3>Robotic Arm</h3>
-                            <p>Led the development of a robotic arm designed for precise pick-and-place tasks. This project, supported by SSIP India, integrates advanced sensors and actuators to enhance the efficiency and accuracy of industrial and manufacturing processes. The robotic arm is a testament to the practical application of robotics in automation.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-item">
+                  </div>
+                
+                  <div class="project-item">
                     <a href="https://github.com/Zinalr44/Car-Price-Prediction-Analysis" target="_blank">
-                        <div class="project-details">
-                            <h3>Predicting Car Selling Prices</h3>
-                            <p>Built a predictive model using Linear Regression and Random Forest algorithms to estimate the selling prices of used cars. By analyzing various features and historical data, this project provides accurate price estimations, aiding both sellers and buyers in making informed decisions in the automotive market.</p>
-                        </div>
+                      <div class="project-details">
+                        <h3>Car Price Prediction</h3>
+                        <p>Built ML models to estimate used car prices using feature engineering and regression analysis. Delivered actionable insights for buyers and sellers.</p>
+                        <p><strong>Tech:</strong> Linear Regression, Random Forest, Pandas, Scikit-learn</p>
+                      </div>
                     </a>
-                </div>
-                <div class="project-item">
+                  </div>
+                
+                  <div class="project-item">
                     <a href="https://github.com/Zinalr44/Customer-Segmentation-using-K-Means-Clustering" target="_blank">
-                        <div class="project-details">
-                            <h3>Customer Segmentation Analysis</h3>
-                            <p>Conducted a comprehensive analysis of customer spending patterns to identify key segments and drive strategic business decisions. This project led to a 15% increase in revenue by targeting specific customer groups with tailored marketing strategies, highlighting the importance of data-driven insights in business growth.</p>
-                        </div>
+                      <div class="project-details">
+                        <h3>Customer Segmentation Analysis</h3>
+                        <p>Used clustering algorithms to identify high-value customer segments based on purchasing behavior, driving 15% business growth via targeted marketing.</p>
+                        <p><strong>Tech:</strong> K-Means, PCA, Seaborn, Scikit-learn, Python</p>
+                      </div>
                     </a>
-                </div>
-                <div class="project-item">
+                  </div>
+                
+                  <div class="project-item">
                     <a href="https://github.com/Zinalr44/Spam-Message-Classification" target="_blank">
-                        <div class="project-details">
-                            <h3>Spam Message Detection</h3>
-                            <p>Implemented machine learning models using Support Vector Machine (SVM) and Decision Trees to classify text messages as spam or ham. This project focuses on effective feature engineering and data preprocessing to achieve high accuracy in spam detection, enhancing the security and efficiency of communication systems.</p>
-                        </div>
+                      <div class="project-details">
+                        <h3>Spam Message Detection</h3>
+                        <p>Implemented ML classifiers for detecting spam SMS using NLP preprocessing and supervised learning. Optimized for real-world deployment accuracy.</p>
+                        <p><strong>Tech:</strong> SVM, Decision Tree, CountVectorizer, Scikit-learn</p>
+                      </div>
                     </a>
-                </div>
-            </div>
+                  </div>
+                
         </div>
-    </section>
-    
+      </div>
+</section>                                                                                 
+                  
     <section class="section achievements" id="achievements">
         <div class="container">
             <h2>Achievements</h2>
+            <p class="section-description">
+              Recognized for innovation and impact through national-level competitions, funding awards, and competitive selections.
+            </p>
+        
             <div class="achievement-item">
-                <p><strong>Reckon 4.0 Hackathon</strong> (National Level)</p>
-                <p>Secured first place at the national level, organized by GDSC JIET Jodhpur, for developing a groundbreaking AI-based project.</p>
+              <p><strong>Winner – Reckon 4.0 National Hackathon</strong></p>
+              <p>Secured 1st place for developing a real-time AI solution addressing practical problems with tangible societal impact.</p>
             </div>
+        
             <div class="achievement-item">
-                <p><strong>SSIP Hackathon 2022</strong> (Regional Round)</p>
-                <p>Selected for the regional round organized by the Government of Gujarat for innovative solutions in technology.</p>
+              <p><strong>SSIP India – Funding Recipient</strong></p>
+              <p>Received government-backed innovation funding for two robotics projects: Robotic Nurse and Robotic Arm.</p>
+            </div>
+        
+            <div class="achievement-item">
+              <p><strong>Regional Finalist – SSIP Hackathon 2022</strong></p>
+              <p>Recognized for an innovative AI solution during regional hackathon rounds held across Gujarat.</p>
             </div>
             
         </div>
@@ -169,6 +306,13 @@
     <section class="section experience" id="experience">
         <div class="container">
             <h2>Experience</h2>
+            <p class="section-description">
+                A journey through hands-on experience in AI, data science, and robotics — from internships to real-world deployments and funded research projects.
+            </p>
+            <div class="experience-item">
+                <p><strong>AI/ML Developer – Prodev Infotech</strong> (Feb 2025 – Present)</p>
+                <p>Building and deploying real-time ML pipelines using FastAPI, Hugging Face, and custom LLM integrations.</p>
+            </div>
             <div class="experience-item">
                 <p><strong>MooRopan INDIA PVT. LTD.</strong> (Oct 2022 - May 2023)</p>
                 <p>As a core member,Developed engaging content, managed campaigns, and analyzed metrics to enhance brand presence and customer engagement on social media.</p>
@@ -179,7 +323,7 @@
     <section class="section contact" id="contact">
         <div class="container">
             <h2>Let's Connect!</h2>
-            <p>I’m always open to discuss new projects or opportunities. Feel free to reach out to me!</p>
+            <p>Whether you’re interested in collaborating, hiring, or just chatting about AI and robotics, I’d love to hear from you.</p>
             <div class="contact-info">
                 <a href="mailto:zinalraval4444@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/zinalraval/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -196,7 +340,8 @@
             <p>&copy; 2024 Zinal Raval. All rights reserved.</p>
         </div>
     </footer>
-    
+ 
+    <button id="scrollTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆</button>
 </body>
 </html>
     
